@@ -86,32 +86,29 @@ void loop() {
 }
 
 void handleCommand(unsigned long cmd) {
+  // TÄHTIS: Kui sinu puldi koodid on erinevad, asenda BUTTON_* väärtused
+  // Kasuta Serial Monitori, et näha oma puldi koode
   switch(cmd) {
-    case 0x18: // UP nupp (hex kood võib erineda)
     case BUTTON_UP:
       moveForward();
       Serial.println("Liigub edasi");
       break;
       
-    case 0x52: // DOWN nupp
     case BUTTON_DOWN:
       moveBackward();
       Serial.println("Liigub tagasi");
       break;
       
-    case 0x08: // LEFT nupp
     case BUTTON_LEFT:
       turnLeft();
       Serial.println("Pöörab vasakule");
       break;
       
-    case 0x5A: // RIGHT nupp
     case BUTTON_RIGHT:
       turnRight();
       Serial.println("Pöörab paremale");
       break;
       
-    case 0x1C: // OK/SELECT nupp
     case BUTTON_OK:
       stopMotors();
       Serial.println("Seiskamine");

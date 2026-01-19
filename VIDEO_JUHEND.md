@@ -549,7 +549,7 @@ Näeme järgmises projektis!"
 
 ## 🎬 Montaaži näpunäited
 
-### Üldine struktuuur:
+### Üldine struktuur:
 1. **Intro** (5-10 sek) - Titlekaart, muusika
 2. **Hook** (10-20 sek) - Näita lõpptulemus kohe
 3. **Põhisisu** - Järgi stsenaariumi

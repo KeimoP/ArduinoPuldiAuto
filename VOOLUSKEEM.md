@@ -147,7 +147,7 @@ Mootor - → L298N OUT4
 
 **4.1 Sensori pin-ide tuvastamine:**
 
-TSOP1738 (vaade eestpoolt):
+TSOP1738 (vaates eestpoolt):
 ```
     ┌───┐
     │ ● │  ← IR Vastuvõtja
