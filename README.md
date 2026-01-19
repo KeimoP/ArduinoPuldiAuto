@@ -1,9 +1,7 @@
 # RC-auto ehituse dokumentatsioon (Arduino)
 
 ## Projekti ülevaade
-Selle projekti eesmärk oli ehitada nelikveoline (4WD) RC-auto, kasutades Arduino platvormi, Adafruit Motor Shieldi, TT-tüüpi alalisvoolumootoreid ning RC-saatjat ja vastuvõtjat. Auto raam on 3D-prinditud ning kogu süsteem on juhitav raadiosignaali kaudu (throttle ja steering).
-
-Projekt on loodud koolitöö raames ning demonstreerib riistvara ja tarkvara integreerimist Arduino baasil.
+Ehita robot, mis suudab liikuda ja läbida takistustega raja. Robot peab olema programmeeritud ning kasutama tehnilist lahendust, mida õpilane ise mõistab ja juhib.
 
 ---
 
