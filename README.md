@@ -83,6 +83,18 @@ Patareid paigutati auto esiossa, et mass oleks ühtlaselt jaotunud.
 
 ---
 
+## Visuaalne dokumentatsioon
+
+### Valmis RC-auto
+Alloleval pildil on näha projekti lõpptulemus koos 3D-prinditud raamiga, paigaldatud elektroonika ja ratastega.
+
+![Valmis RC-auto](valmis_auto.jpg)
+
+### Analoogsignaalide ühendused
+Järgneval pildil on näha RC-vastuvõtja ja Arduino vaheline analoogsignaalide juhtmestik (steering ja throttle).
+
+![Analoogsignaalide juhtmestik](analogwires.jpg)
+
 ## Tarkvara ja programmeerimine
 Arduino ühendati arvutiga USB-kaabli abil ning programm laaditi üles Arduino IDE kaudu.
 
