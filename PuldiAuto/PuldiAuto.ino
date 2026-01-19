@@ -70,15 +70,18 @@ void setup() {
 
 void loop() {
   if (IrReceiver.decode()) {
-    // Loeme IR signaali
-    unsigned long command = IrReceiver.decodedIRData.command;
-    
-    // Kuvame käsu seerialiidesesse
-    Serial.print("Vastuvõetud käsk: 0x");
-    Serial.println(command, HEX);
-    
-    // Käsitleme erinevaid käske
-    handleCommand(command);
+    // Kontrolli, et saadud andmed on kehtivad (ei ole kordus ega viga)
+    if (IrReceiver.decodedIRData.flags == 0) {
+      // Loeme IR signaali
+      unsigned long command = IrReceiver.decodedIRData.command;
+      
+      // Kuvame käsu seerialiidesesse
+      Serial.print("Vastuvõetud käsk: 0x");
+      Serial.println(command, HEX);
+      
+      // Käsitleme erinevaid käske
+      handleCommand(command);
+    }
     
     // Valmistume järgmiseks signaaliks
     IrReceiver.resume();
@@ -131,7 +134,10 @@ void handleCommand(unsigned long cmd) {
       
     default:
       stopMotors();
-      Serial.println("Tundmatu käsk - seiskamine");
+      Serial.print("Tundmatu käsk: 0x");
+      Serial.print(cmd, HEX);
+      Serial.println(" - seiskamine");
+      Serial.println("Kui see on sinu puldi nupp, uuenda BUTTON_* väärtusi koodi alguses!");
       break;
   }
 }
