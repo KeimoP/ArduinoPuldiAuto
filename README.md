@@ -107,6 +107,20 @@ Arduino ühendati arvutiga USB-kaabli abil ning programm laaditi üles Arduino I
 
 ---
 
+# Projekti video
+
+Selles videos on näha Arduino-põhise RC-auto töö.
+
+Fail asub selles repos:
+- VIDEO.mp4
+
+Video demonstreerib:
+- Auto liikumist edasi ja tagasi
+- Steeringut
+- RC-juhtimise toimimist
+
+Video on lisatud koolitöö dokumenteerimise eesmärgil.
+
 ## Kasutatav kood
 
 ```cpp
