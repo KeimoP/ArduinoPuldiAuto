@@ -28,6 +28,10 @@ Raam prinditi 3D-printeriga ning sisaldab eelnevalt disainitud kinnitusaauke moo
 | Jumper-juhtmed | mitu | Ühenduste loomiseks |
 | Jootetina | – | Elektriliste ühenduste jootmiseks |
 
+## Joonis ehitusest
+
+![Ehituse Joonis](images/buildguide.jpg)
+
 ---
 
 ## Mootorite paigaldamine
